@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 *,*::before, *::after {
    box-sizing: border-box;
@@ -19,14 +17,6 @@ header {
   width: 100%;
 }
 
-@keyframes myAnim1 {
-  from {
-    margin-left: -1000px;
-  }
-  to {
-    margin-left: 0px;
-  }
-}
 
 .container-menu {
   width: 100%;
@@ -46,7 +36,7 @@ header {
   height: 100%;
   list-style: none;
   text-align: left;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .main-menu li {
@@ -80,11 +70,10 @@ header {
 }
 
 .logo1 {
-  width: 13%;
-  margin-left: 20px;
+  width:25%;
+  margin-left: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
 .logo-img img {
@@ -92,6 +81,10 @@ header {
   align-items: center;
 }
 
+.logo-text{
+  display: flex;
+  flex-direction: column
+}
 
 .logo-img:hover {
   transition: 0.4s;
@@ -103,7 +96,8 @@ header {
   padding-left: 8px;
   text-align: center;
   text-shadow: 1px 2px 5px black;
-  font-family: 'Lobster', 'Roboto', sans-serif;
+  font-family:'Roboto', sans-serif;
+  margin: 0;
 }
 
 .menu-list {
@@ -121,28 +115,31 @@ header {
 }
 
 .name h2 {
-  margin-top: 0;
-  font-size: 35px;
-  color: #f5a60d;
-  font-family: 'Lobster', 'Roboto', sans-serif;
-  /* animation: myAnim1 1s linear alternate; */
-}
+   margin-top: 0;
+   font-size: 40px;
+   color: #f5a60d;
+   font-family:'Roboto', sans-serif;
+   text-align: center;
+ }
 
 .name h3 {
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  margin-top: 50px;
-  font-size: 20px;
   font-style: italic;
-  font-weight: 300;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column
 }
 
 .name {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   height: 100px;
   width: 100%;
-  /* background: url(../img/lens.jpg) no-repeat  center; */
+
   }
 
 /* main */
@@ -178,8 +175,8 @@ header {
 
 .gallery {
   display: grid;
-  width: 90%;
-  margin: 40px auto;
+  width: 100%;
+  margin: 10px auto;
   grid-template-columns: auto auto auto auto;
   grid-gap: 2vh;
   grid-auto-flow: dense;
@@ -221,23 +218,6 @@ header {
   transform: scale(1.1);
 }
 
-@media only screen and (min-width:480px )and (max-width:770px){
-  .gallery {
-    display: grid;
-    grid-template-columns:  auto auto auto;
-
-  }
-
-}
-
-@media only screen and (min-width:320px )and (max-width:480px){
-  .gallery {
-    display: grid;
-    grid-template-columns: auto auto;
-
-  }
-
-}
 
 @media only screen and (max-width:320px){
   .gallery {
@@ -257,14 +237,17 @@ header {
 /* footer */
 
 footer{
+  display: flex;
+  flex-direction: column;
   background-color:rgb(42, 42, 42);
   height: 120px;
-  margin: 10px;
+  margin-top:  10px;
+  margin-bottom: 10px;
   border-radius:20px;
 }
 
 .footer-end {
-  margin:10px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -274,15 +257,15 @@ footer{
   padding-left: 8px;
   text-align: center;
   text-shadow: 1px 2px 5px black;
-  font-family: 'Lobster', 'Roboto', sans-serif;
+  font-family:'Roboto', sans-serif;
 }
 
 .logo2 {
   width: 13%;
-  margin: 20px;
+  margin-left: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .fotter-block {
@@ -294,8 +277,12 @@ footer{
 }
 
 .copyright {
-  margin: -30px;
+  width: 100%;
   text-align: center;
+}
+
+.copyright p{
+color: #fff;
 }
 
 .logo-contact a{
@@ -326,17 +313,14 @@ footer{
   color: #f5a60d;
 }
 
+
 /* Адаптив */
 
 
 @media screen and (min-width:850px) and (max-width:1250px) {
 
-  .name {
-    height: 250px;
-    }
-
   .name h3 {
-      margin-top: 150px;
+      margin-top: 15px;
       font-size: 20px;
     }
 
@@ -356,25 +340,6 @@ footer{
     padding: 3px;
   }
 
-  .block1 .item p {
-    font-size: 2vw;
-    left: 18%;
-    top: 30%;
-  }
-
-  .item {
-    margin:5px;
-  }
-
-  .photosession {
-     justify-content: space-evenly;
-     }
-
-form {
-  height: 45vw;
-  padding-top: 5vw;
-  padding-right: 0.8vw;
-}
 
 footer h3 {
   padding-top: 1%;
@@ -395,19 +360,15 @@ footer #logo-contact span {
 }
 
 
-@media screen and (min-width:576px) and (max-width:850px) {
+@media screen and (min-width:400px) and (max-width:850px) {
 
-  .name {
-    height: 150px;
-    }
 
   .name h3 {
-    margin-top: 50px;
-    font-size: 15px;
+    font-size: 12px;
   }
 
-  hr {
-     display: none;
+  .name h2 {
+    font-size: 15px;
   }
 
   .main-menu {
@@ -416,11 +377,12 @@ footer #logo-contact span {
     right: 5px;
     width: 180px;
     text-align: left;
+    z-index: 10;
   }
 
   .main-menu li {
     display: block;
-    margin-right: -50px;
+    margin-right: -20px;
 
   }
 
@@ -445,12 +407,12 @@ footer #logo-contact span {
    }
 
    .logo1 {
-     padding-left: 3%;
+      width: 50%;
    }
 
    .toogle-button {
      display: block;
-     padding: 3% 20px 5px 10px;
+     padding: 3% 10px 5px 10px;
      text-align: right;
      color: rgb(255, 225, 194);
      text-shadow: 1px 2px 5px black;
@@ -460,6 +422,7 @@ footer #logo-contact span {
      color: #f5a60d;
      text-shadow: 1px 2px 5px black;
    }
+
 
    #menu-checkbox:checked + nav .main-menu {
      display: block;
@@ -472,29 +435,6 @@ footer #logo-contact span {
    #menu-checkbox:checked + nav .toogle-button::after {
      content: attr(data-close);
    }
-
-    .name h1 {
-      font-size: 40px;
-    }
-
-    .name h3 {
-      font-size: 15px;
-    }
-
-    .block1 h2, {
-      font-size: 30px;
-      text-align: center;
-    }
-
-    .block1 .item p {
-      font-size: 1em;
-      top: 30%;
-    }
-
-    .photosession {
-      flex-direction: column;
-      align-items: center;
-       }
 
 
     #logo-contact span {
@@ -510,6 +450,22 @@ footer #logo-contact span {
   .logo-contact{
     margin-top: 1vw;
   }
+
+  .logo-contact a{
+    margin: 5px;
+    padding: 0px;
+  }
+
+  .logo-contact a:last-child{
+    margin: 10px;
+ }
+
+ .gallery {
+   display: grid;
+   grid-template-columns:  auto auto auto;
+
+ }
+
 
   footer #logo-contact img {
     width: 20px;

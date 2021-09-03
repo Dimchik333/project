@@ -7,15 +7,19 @@
   <title>Love Story</title>
   <link rel="icon" href="img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/stylecontacts.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
   <header>
     <div class="container-menu">
       <div class="logo1">
         <div class="logo-img">
-          <a href="#"><img src="img/camera.png" alt="logo"></a>
+          <a href="index.html"><img src="img/camera.png" alt="logo"></a>
         </div>
-        <p>Love Story</p>
+        <div class="logo-text">
+          <p>Love Story</p>
+          <p>+380-95-33-333-33</p>
+        </div>
       </div>
       <div class="menu-list">
         <input type="checkbox" id="menu-checkbox">
@@ -39,7 +43,50 @@
   </header>
 
   <main>
-
+    <div class="container-md mt-5">
+      <div class="row  row-cols-1 row-cols-md-2">
+          <div class="col">
+              <div class="row">
+                  <div class="col-12">
+                      <h3 class="text-white">Наше местоположениу</h3>
+                      <div class="embed-responsive embed-responsive-21by9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.093995651767!2d37.606955715669734!3d48.722795579274425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df96f4459fb6fb%3A0x8dff9266cbe9d5a7!2z0LLRg9C70LjRhtGPINCf0LDRgNC60L7QstCwLCAxMDAsINCa0YDQsNC80LDRgtC-0YDRgdGM0LosINCU0L7QvdC10YbRjNC60LAg0L7QsdC70LDRgdGC0YwsIDg0MzI2!5e0!3m2!1sru!2sua!4v1630610520749!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
+                      </div>
+                  </div>
+                  <div class="col-12 pt-3">
+                      <h3 class="text-white">Адресс</h3>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Украина, Краматорск, ул.Парковая 1</li>
+                          <li class="list-group-item">Телефон: (+38) 095-333-33-33</li>
+                          <li class="list-group-item">Email: info@company.com</li>
+                        </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <h3 class="text-white">Контакты</h3>
+              <form>
+                  <div class="form-group text-secondary">
+                      <label for="name">Имя</label>
+                      <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                  <div class="form-group text-secondary">
+                    <label for="email">Email </label>
+                    <input type="email" class="form-control" id="email" name="email">
+                  </div>
+                  <div class="form-group text-secondary">
+                    <label for="mobile">Телефон</label>
+                    <input type="text" class="form-control" id="mobile" name="mobile">
+                  </div>
+                  <div class="form-group text-secondary">
+                      <label for="subject">Комментарии</label>
+                      <textarea class="form-control" id="subject" name="subject"></textarea>
+                    </div>
+                  <button type="submit" class="btn btn-light text-light bg-dark text-uppercase" name="send">Отправить</button>
+                </form>
+           </div>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -72,5 +119,8 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
