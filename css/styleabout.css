@@ -189,7 +189,7 @@ main h3 {
 }
 .block {
   padding: 30px;
-  text-align: left;
+  text-align: right;
 }
 .block p {
   color: #f5a60d;
@@ -212,7 +212,7 @@ main h3 {
 }
 .block:first-child,
 .block:last-child {
-  text-align: right;
+  text-align: left;
 }
 .block:after {
   clear: both;

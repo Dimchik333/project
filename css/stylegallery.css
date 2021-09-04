@@ -157,9 +157,7 @@ header {
   max-height: 80%;
   outline: none;
   pointer-events: none;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -moz-user-select: none; user-select: none;
 }
 
 .image img:focus ~ div {
@@ -422,7 +420,6 @@ footer #logo-contact span {
      color: #f5a60d;
      text-shadow: 1px 2px 5px black;
    }
-
 
    #menu-checkbox:checked + nav .main-menu {
      display: block;
